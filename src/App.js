@@ -1,8 +1,11 @@
 import './App.css';
-import Box1 from './components/Box1';
-import Box2 from './components/Box2';
-import Box3 from './components/Box3';
-import Box4 from './components/Box4';
+import Box from './components/Box';
+
+const box1 = {'source': "./images/icon1.png", 'alt': 'icon1', 'title': 'Declarative', 'text': (<p> React makes it <br /> painless to create <br /> interactive UIs.</p>)};
+const box2 = {'source': "./images/icon2.png", 'alt': 'icon2', 'title': 'Components', 'text': (<p> Build encapsulated <br /> components that <br /> manage their state.</p>)};
+const box3 = {'source': "./images/icon3.png", 'alt': 'icon3', 'title': 'Single-Way', 'text': (<p> A set of immutable <br /> values are passed to <br /> the components.</p>)};
+const box4 = {'source': "./images/icon4.png", 'alt': 'icon4', 'title': 'JSX', 'text': (<p> Statically-typed, <br /> designed to run on <br /> modern browsers.</p>)};
+
 
 function App() {
   return (
@@ -27,10 +30,10 @@ function App() {
 
       <main className="App-main">
         <div className="App-main-container">
-          <Box1 />
-          <Box2 />
-          <Box3 />
-          <Box4 />
+          <Box data="box" />
+          <Box data="box" />
+          <Box data="box" />
+          <Box data="box" />
         </div>
       </main>
     </div>
