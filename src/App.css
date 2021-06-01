@@ -1,38 +1,80 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 95%;
+  height: 95%;
+  margin: 2rem auto 0;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: left;
+  align-content: flex-start;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.react-logo {
+  position:absolute;
+  left: 50%;
+  top: 15%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header-container {
+  width: 90%;
+  margin: 2rem auto 0;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  align-items: baseline;
+  height: 50%;
+}
+
+.App-header-content h1{
+  font-size: 3rem;
+}
+
+.App-header-content button {
+  color: #282c34;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+}
+
+.App-main {
+  height: 40vh;
+}
+
+.App-main-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 4vh;
+  margin: auto;
+  width: 80%;
+}
+
+.App-main-box {
+  height: 40%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.App-main-box img {
+  width: 50%;
+  align-self: flex-start;
 }
